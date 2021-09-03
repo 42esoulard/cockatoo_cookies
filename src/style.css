@@ -1,0 +1,337 @@
+@font-face {
+    font-family: 'Pacifico';
+    src: url('./Pacifico-Regular.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Coming Soon';
+  src: url('./ComingSoon-Regular.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Mr Dafoe';
+    src: url('./MrDafoe-Regular.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+html {
+    display: flex;
+    justify-content: center;
+    max-width:100%;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-size:300px;
+    max-width:100%;
+}
+
+#content {
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    min-height:600px;
+    width: 800px;
+    margin-top: 10px;
+    border-radius: 15px;
+    height:100%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    padding: 10px;
+    background-color: rgba(243, 200, 99, 0.356);
+
+    border-style:solid;
+    border-width: 2px;
+    border-color: rgba(251, 248, 70, 0.329);
+    border-right-style: none;
+    border-left-style: none;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+}
+
+.siteName {
+    font-family: 'Pacifico', cursive;
+    font-size: 70px;
+    white-space: nowrap;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+/* smaller window format */
+@media (max-width: 800px) {
+    .siteName {
+        font-size: 60px;
+    }
+    .logo {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+/* mobile format */
+@media (max-width: 600px) {
+    .siteName {
+        font-size: 30px;
+    }
+    .logo {
+        width: 45px;
+        height: 45px;
+    }
+
+}
+
+.main {
+    margin: 20px 0px 10px 10px;
+}
+
+.motto {
+    font-family: 'Mr Dafoe', cursive;
+    font-size: 20px;
+    text-align: right;
+    margin-right:20px;
+    margin-top: -20px;
+
+}
+
+.pageContent {
+    display:flex;
+    flex-direction: row-reverse; 
+    justify-content: space-between;
+ }
+
+.navBar {
+    list-style: none;
+    margin-top:20px;
+    margin-right:0px;
+}
+.navButton {
+    color:antiquewhite;
+    font-family: 'Pacifico', cursive;
+    font-size:15px;
+    background-color:black;
+    padding:5px;
+    text-align: center;
+    margin:5px 0px 5px 5px;
+    border-top-left-radius: 10px;
+    border-width:1px;
+    border-style:solid;
+    transition:0.5s;
+    cursor:pointer;
+
+}
+.navButton:hover {
+    background-color:rgba(243, 200, 99, 0.356);
+    color:black;
+    border-style:solid;
+    border-width:1px;
+    border-color: rgba(251, 248, 70, 0.329);
+    transition:0.5s;
+}
+
+
+
+
+.homePage, .menuPage, .contactPage {
+    margin-top: 50px;
+    margin-left: 10px;
+    padding: 10px;
+    background-color: rgba(255, 246, 220, 0.514);
+    font-family: 'Coming Soon', sans-serif;
+    width: 65%;
+}
+
+.label {
+    width:60px;
+    height:60px;
+    margin-top: -80px;
+}
+
+.homePage .presentationList {
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 0px;
+    background-color: rgba(243, 200, 99, 0.178);
+    font-family: 'Coming Soon', sans-serif;
+    font-size:14px;
+    min-width:190px;
+}
+
+.menuPage .menuList {
+    font-family: 'Mr Dafoe', cursive;
+    text-align:center;
+    font-size: 25px;
+    list-style: none;
+    background-color: rgba(243, 200, 99, 0.356);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuPage .menuCookie {
+
+    height: 40px;
+    width: 40px;
+}
+
+.menuTitle {
+    font-family: 'Mr Dafoe', cursive;
+    text-align: right;
+    font-size:35px;
+    margin-bottom:-30px;
+
+}
+
+.menuList {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.menuPage li {
+    margin-top:20px;
+    margin-left: -40px;
+    padding:3px;
+    background-color:rgba(243, 200, 99, 0.356);
+    color:black;
+    border-style:solid;
+    border-width:1px;
+    border-color: rgba(251, 248, 70, 0.329);
+    display:inline;
+}
+
+.menuPage p {
+    font-family: 'Coming Soon', sans-serif;
+    font-size:14px;
+    margin-top:0px;
+    margin-left: -40px;
+    background-color: rgba(253, 243, 219, 0.472);
+}
+
+.contactPage {
+    
+    max-width: 800px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactPage .streetAdressContainer {
+    width: 250px;
+    margin:0px;
+    margin-left:0px;
+    background-color: rgba(252, 240, 209, 0.699);
+    border-radius: 15px;
+    border-color: rgba(251, 248, 70, 0.329);
+    border-style:solid;
+}
+.contactPage .streetAdress {
+    margin:0px;
+    margin-left:20px;
+}
+
+.contactPage .contactImage {
+    width: 200px;
+    height: 200px;
+    margin-left: 100px;
+}
+
+.contactPage .presentationText {
+    font-family: 'Mr Dafoe', cursive;
+    font-size:28px;
+    margin: 7px;
+    margin-bottom:20px;
+}
+
+.contactPage .messageFormContainer {
+    width: 230px;
+    border-color: rgba(251, 248, 70, 0.329);
+    border-style:solid;
+    border-radius: 15px;
+    font-family: 'Mr Dafoe', cursive;
+    font-size:35px;
+    margin-top:60px;
+    background-color: rgba(252, 240, 209, 0.699);
+    padding-left:20px;
+}
+
+.contactPage .formInput {
+    font-family: 'Mr Dafoe', cursive;
+    font-family: 'Coming Soon', sans-serif;
+    font-size:12px;
+    max-width: 200px;
+    margin-top:20px;
+}
+.messageFormTitle {
+    font-size: 32px;
+    margin-top:10px;
+}
+
+.contactPage .formButton {
+    color:antiquewhite;
+    font-family: 'Pacifico', cursive;
+    font-size:15px;
+    background-color:black;
+    margin-left:-20px;
+    margin-top:10px;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-width:1px;
+    border-style:solid;
+    transition:0.5s;
+    cursor:pointer;
+    padding-top: 2px;
+    padding-bottom: 2px;
+
+}
+.formButton:hover {
+    background-color:rgba(243, 200, 99, 0.356);
+    color:black;
+    border-style:solid;
+    border-width:1px;
+    border-color: rgba(251, 248, 70, 0.329);
+    transition:0.5s;
+}
+
+footer {
+    font-family: 'Mr Dafoe', cursive;
+    padding:10px;
+    margin-top:530px;
+    text-align: right;
+    background-color: rgba(243, 200, 99, 0.178);
+    
+    border-style:solid;
+    border-width: 2px;
+    border-color: rgba(251, 248, 70, 0.329);
+    border-right-style: none;
+    border-left-style: none;
+    border-bottom-style: none;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+}
+
+footer a {
+    color:rgb(168, 85, 54);
+}
